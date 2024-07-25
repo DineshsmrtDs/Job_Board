@@ -1,0 +1,42 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Job Seekers -->
+    <servlet>
+        <servlet-name>AddAcademic</servlet-name>
+        <servlet-class>your.package.AddAcademicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddAcademic</servlet-name>
+        <url-pattern>/addAcademic</url-pattern>
+    </servlet-mapping>
+
+    <!-- Repeat similar servlet configurations for other JSP pages -->
+
+    <!-- Employees -->
+    <servlet>
+        <servlet-name>AddAward</servlet-name>
+        <servlet-class>your.package.AddAwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddAward</servlet-name>
+        <url-pattern>/addAward</url-pattern>
+    </servlet-mapping>
+
+    <!-- Companies -->
+    <servlet>
+        <servlet-name>DisplayCompanies</servlet-name>
+        <servlet-class>your.package.DisplayCompaniesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayCompanies</servlet-name>
+        <url-pattern>/displayCompanies</url-pattern>
+    </servlet-mapping>
+
+</web-app>

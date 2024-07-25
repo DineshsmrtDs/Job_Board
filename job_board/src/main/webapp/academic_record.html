@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Academic Record</title>
+</head>
+<body>
+    <h1>Add Academic Record</h1>
+    <form action="addAcademic.jsp" method="post">
+        <input type="hidden" name="user_id" value="<%= session.getAttribute('user_id') %>">
+        <label for="institution_name">Institution Name:</label>
+        <input type="text" id="institution_name" name="institution_name" required><br><br>
+
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required><br><br>
+
+        <label for="field_of_study">Field of Study:</label>
+        <input type="text" id="field_of_study" name="field_of_study" required><br><br>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date"><br><br>
+
+        <button type="submit">Add Academic Record</button>
+    </form>
+</body>
+</html>

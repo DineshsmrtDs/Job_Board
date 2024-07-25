@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Technical Literature</title>
+</head>
+<body>
+    <h1>Add Technical Literature</h1>
+    <form action="addTechnicalLiterature.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="literature_title">Literature Title:</label>
+        <input type="text" id="literature_title" name="literature_title" required><br><br>
+
+        <label for="literature_content">Literature Content:</label>
+        <textarea id="literature_content" name="literature_content" required></textarea><br><br>
+
+        <label for="literature_url">Literature URL:</label>
+        <input type="text" id="literature_url" name="literature_url"><br><br>
+
+        <button type="submit">Add Technical Literature</button>
+    </form>
+</body>
+</html>

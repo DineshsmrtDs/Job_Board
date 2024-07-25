@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Award</title>
+</head>
+<body>
+    <h1>Add Award</h1>
+    <form action="addAward.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="award_name">Award Name:</label>
+        <input type="text" id="award_name" name="award_name" required><br><br>
+
+        <label for="award_description">Award Description:</label>
+        <textarea id="award_description" name="award_description" required></textarea><br><br>
+
+        <label for="award_date">Award Date:</label>
+        <input type="date" id="award_date" name="award_date" required><br><br>
+
+        <button type="submit">Add Award</button>
+    </form>
+</body>
+</html>

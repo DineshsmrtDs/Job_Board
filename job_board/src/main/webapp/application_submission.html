@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Application</title>
+</head>
+<body>
+    <h1>Submit Application</h1>
+    <form action="submitApplication.jsp" method="post">
+        <input type="hidden" name="job_id" value="<%= request.getParameter('job_id') %>">
+        <input type="hidden" name="user_id" value="<%= session.getAttribute('user_id') %>">
+        <label for="cover_letter">Cover Letter:</label>
+        <textarea id="cover_letter" name="cover_letter"></textarea><br><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>

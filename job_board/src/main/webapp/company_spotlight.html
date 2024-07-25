@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Company Spotlight</title>
+</head>
+<body>
+    <h1>Add Company Spotlight</h1>
+    <form action="addCompanySpotlight.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="spotlight_message">Spotlight Message:</label>
+        <textarea id="spotlight_message" name="spotlight_message" required></textarea><br><br>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required><br><br>
+
+        <label for="media_url">Media URL:</label>
+        <input type="text" id="media_url" name="media_url" required><br><br>
+
+        <button type="submit">Add Spotlight</button>
+    </form>
+</body>
+</html>

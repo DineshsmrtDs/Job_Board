@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Photo</title>
+</head>
+<body>
+    <h1>Add Photo</h1>
+    <form action="addPhoto.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="photo_url">Photo URL:</label>
+        <input type="text" id="photo_url" name="photo_url" required><br><br>
+
+        <label for="photo_description">Photo Description:</label>
+        <textarea id="photo_description" name="photo_description"></textarea><br><br>
+
+        <button type="submit">Add Photo</button>
+    </form>
+</body>
+</html>

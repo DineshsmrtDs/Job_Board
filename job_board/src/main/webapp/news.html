@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add News</title>
+</head>
+<body>
+    <h1>Add News</h1>
+    <form action="addNews.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="news_title">News Title:</label>
+        <input type="text" id="news_title" name="news_title" required><br><br>
+
+        <label for="news_content">News Content:</label>
+        <textarea id="news_content" name="news_content" required></textarea><br><br>
+
+        <label for="news_date">News Date:</label>
+        <input type="date" id="news_date" name="news_date" required><br><br>
+
+        <label for="news_url">News URL:</label>
+        <input type="text" id="news_url" name="news_url"><br><br>
+
+        <button type="submit">Add News</button>
+    </form>
+</body>
+</html>

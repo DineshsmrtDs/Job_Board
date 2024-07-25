@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Partner/Customer</title>
+</head>
+<body>
+    <h1>Add Partner/Customer</h1>
+    <form action="addPartnerCustomer.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="partner_name">Partner Name:</label>
+        <input type="text" id="partner_name" name="partner_name" required><br><br>
+
+        <label for="partner_type">Partner Type:</label>
+        <select id="partner_type" name="partner_type" required>
+            <option value="partner">Partner</option>
+            <option value="customer">Customer</option>
+        </select><br><br>
+
+        <label for="partner_url">Partner URL:</label>
+        <input type="text" id="partner_url" name="partner_url"><br><br>
+
+        <button type="submit">Add Partner/Customer</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact</title>
+</head>
+<body>
+    <h1>Add Contact</h1>
+    <form action="addContact.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="contact_name">Contact Name:</label>
+        <input type="text" id="contact_name" name="contact_name" required><br><br>
+
+        <label for="contact_position">Contact Position:</label>
+        <input type="text" id="contact_position" name="contact_position"><br><br>
+
+        <label for="contact_email">Contact Email:</label>
+        <input type="email" id="contact_email" name="contact_email"><br><br>
+
+        <label for="contact_phone">Contact Phone:</label>
+        <input type="text" id="contact_phone" name="contact_phone"><br><br>
+
+        <button type="submit">Add Contact</button>
+    </form>
+</body>
+</html>

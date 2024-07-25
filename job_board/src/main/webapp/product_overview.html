@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product Overview</title>
+</head>
+<body>
+    <h1>Add Product Overview</h1>
+    <form action="addProductOverview.jsp" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required><br><br>
+
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" required><br><br>
+
+        <label for="product_description">Product Description:</label>
+        <textarea id="product_description" name="product_description" required></textarea><br><br>
+
+        <label for="product_url">Product URL:</label>
+        <input type="text" id="product_url" name="product_url"><br><br>
+
+        <button type="submit">Add Product Overview</button>
+    </form>
+</body>
+</html>
